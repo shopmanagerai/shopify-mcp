@@ -1,0 +1,31 @@
+{
+  "name": "shopmanager-ai",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "test": "vitest run",
+    "typecheck": "tsc -b tsconfig.json",
+    "dev": "pnpm --filter @shopmanagerai/server dev",
+    "start": "node --env-file=.env apps/server/dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "cloudflared": "0.7.3",
+    "eslint": "^8.57.1",
+    "pm2": "^7.0.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "packageManager": "pnpm@10.2.1",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3"
+    ]
+  }
+}

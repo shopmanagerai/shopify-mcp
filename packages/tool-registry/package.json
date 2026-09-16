@@ -1,0 +1,20 @@
+{
+  "name": "@shopmanagerai/tool-registry",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run",
+    "manifest": "tsc -b && node dist/cli/manifest.js"
+  },
+  "dependencies": {
+    "@shopmanagerai/policy-engine": "workspace:*",
+    "@shopmanagerai/shared": "workspace:*",
+    "zod": "^3.24.1",
+    "zod-to-json-schema": "^3.24.1"
+  }
+}

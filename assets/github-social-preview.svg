@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="ShopManager AI Shopify MCP Server">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1280" height="6" fill="#5c6ac4"/>
+
+  <text x="88" y="150" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#8b949e" letter-spacing="3">SHOPMANAGER AI</text>
+
+  <text x="88" y="255" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="76" font-weight="700" fill="#f0f6fc">Shopify MCP Server</text>
+  <text x="88" y="330" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="40" font-weight="400" fill="#8b949e">Free, open source and read-only</text>
+
+  <g font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="600">
+    <rect x="88" y="392" width="196" height="54" rx="27" fill="#1f6feb" fill-opacity="0.18" stroke="#1f6feb"/>
+    <text x="186" y="427" fill="#79c0ff" text-anchor="middle">122 tools</text>
+
+    <rect x="300" y="392" width="230" height="54" rx="27" fill="#238636" fill-opacity="0.18" stroke="#238636"/>
+    <text x="415" y="427" fill="#7ee787" text-anchor="middle">No Shopify writes</text>
+
+    <rect x="546" y="392" width="186" height="54" rx="27" fill="#8957e5" fill-opacity="0.18" stroke="#8957e5"/>
+    <text x="639" y="427" fill="#d2a8ff" text-anchor="middle">Apache-2.0</text>
+  </g>
+
+  <text x="88" y="536" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#8b949e">Claude &#183; ChatGPT &#183; Cursor &#183; Codex &#183; VS Code</text>
+  <text x="88" y="580" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="24" fill="#6e7681">github.com/shopmanagerai/shopify-mcp</text>
+</svg>

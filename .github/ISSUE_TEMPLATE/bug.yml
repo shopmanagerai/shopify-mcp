@@ -1,0 +1,53 @@
+name: Bug report
+description: A tool returns the wrong thing, or the server does not behave as documented.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Never paste an access token, a Theme Access password or a `cp_` token
+        here. If you already have, revoke it.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you asked the assistant, and what came back.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected instead
+    validations:
+      required: true
+  - type: input
+    id: tool
+    attributes:
+      label: Tool name
+      placeholder: shopify.theme.architecture
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of shopify.auth.doctor
+      description: Ask your assistant to run it. Skip if the server will not start.
+      render: text
+  - type: dropdown
+    id: client
+    attributes:
+      label: MCP client
+      options: [Claude Code, ChatGPT, Cursor, Codex, VS Code, Other]
+    validations:
+      required: true
+  - type: dropdown
+    id: demo
+    attributes:
+      label: Does it reproduce in demo mode (SHOPMANAGER_DEMO=1)?
+      options: ["Yes", "No", "Not tried"]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+    validations:
+      required: true

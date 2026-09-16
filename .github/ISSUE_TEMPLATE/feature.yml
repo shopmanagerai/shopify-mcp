@@ -1,0 +1,30 @@
+name: Feature request
+description: Suggest a tool or capability for the Free build.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This build is read-only against Shopify by design. Tools that write to a
+        store belong to the hosted Pro tier and cannot be added here. See
+        [SECURITY.md](../blob/main/SECURITY.md).
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the task, not the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would help
+    validations:
+      required: true
+  - type: checkboxes
+    id: readonly
+    attributes:
+      label: Read-only check
+      options:
+        - label: This can be done without writing anything to the Shopify store.
+          required: true

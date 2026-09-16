@@ -1,0 +1,11 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.shopmanagerai/shopify-mcp",
+  "description": "Read-only Shopify MCP server: inspect themes, Liquid, products, content, store configuration and diagnostics from Claude, ChatGPT, Cursor, Codex or VS Code.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/shopmanagerai/shopify-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://shopmanagerai.com"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@shopmanagerai/tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./testing/fakes": {
+      "types": "./dist/testing/fakes.d.ts",
+      "import": "./dist/testing/fakes.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@shopmanagerai/app-detector": "workspace:*",
+    "@shopmanagerai/ledger": "workspace:*",
+    "@shopmanagerai/policy-engine": "workspace:*",
+    "@shopmanagerai/shared": "workspace:*",
+    "@shopmanagerai/shopify-admin": "workspace:*",
+    "@shopmanagerai/shopify-theme": "workspace:*",
+    "@shopmanagerai/theme-intelligence": "workspace:*",
+    "@shopmanagerai/tool-registry": "workspace:*",
+    "zod": "^3.24.1"
+  }
+}
