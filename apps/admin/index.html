@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+      Shopify requires App Bridge to be a static, synchronous <script> tag and the first
+      <script> in the document - no dynamic injection, no async/defer/type=module. Loading it
+      any other way makes App Bridge throw "must be included as the first <script> tag... Aborting"
+      and every embedded page load then fails to authenticate (getSessionToken() has nothing to
+      call). %SHOPIFY_API_KEY% is swapped for the real client id (or "demo") server-side; the
+      script is harmless to include when not actually embedded (no host/iframe) - it simply does
+      not activate.
+    -->
+    <script src="https://cdn.shopify.com/shopifycloud/app-bridge.js" data-api-key="%SHOPIFY_API_KEY%"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="shopify-api-key" content="%SHOPIFY_API_KEY%" />
+    <title>ShopManagerAI</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

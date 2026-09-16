@@ -1,0 +1,36 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "src/**/*.test.ts"
+  ],
+  "references": [
+    {
+      "path": "../shared"
+    },
+    {
+      "path": "../tool-registry"
+    },
+    {
+      "path": "../policy-engine"
+    },
+    {
+      "path": "../shopify-theme"
+    },
+    {
+      "path": "../shopify-admin"
+    },
+    {
+      "path": "../theme-intelligence"
+    },
+    {
+      "path": "../app-detector"
+    }
+  ]
+}

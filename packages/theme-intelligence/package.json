@@ -1,0 +1,17 @@
+{
+  "name": "@shopmanagerai/theme-intelligence",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
+    "./fixtures/dawn-mini": { "types": "./dist/__fixtures__/dawn-mini/index.d.ts", "import": "./dist/__fixtures__/dawn-mini/index.js" }
+  },
+  "scripts": { "build": "tsc -b", "test": "vitest run" },
+  "dependencies": {
+    "@shopmanagerai/shared": "workspace:*",
+    "@shopify/liquid-html-parser": "^2.10.0"
+  }
+}

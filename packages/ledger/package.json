@@ -1,0 +1,16 @@
+{
+  "name": "@shopmanagerai/ledger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "scripts": { "build": "tsc -b", "test": "vitest run" },
+  "dependencies": {
+    "@shopmanagerai/shared": "workspace:*",
+    "@shopmanagerai/shopify-admin": "workspace:*",
+    "@shopmanagerai/storage": "workspace:*",
+    "kysely": "^0.27.4"
+  }
+}

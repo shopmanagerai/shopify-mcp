@@ -1,0 +1,51 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "references": [
+    {
+      "path": "../../packages/shared"
+    },
+    {
+      "path": "../../packages/mcp-protocol"
+    },
+    {
+      "path": "../../packages/tool-registry"
+    },
+    {
+      "path": "../../packages/policy-engine"
+    },
+    {
+      "path": "../../packages/storage"
+    },
+    {
+      "path": "../../packages/ledger"
+    },
+    {
+      "path": "../../packages/shopify-admin"
+    },
+    {
+      "path": "../../packages/shopify-theme"
+    },
+    {
+      "path": "../../packages/theme-intelligence"
+    },
+    {
+      "path": "../../packages/app-detector"
+    },
+    {
+      "path": "../../packages/tools"
+    },
+    {
+      "path": "../../packages/entitlement-freemius"
+    }
+  ],
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "src/**/*.test.ts"
+  ]
+}

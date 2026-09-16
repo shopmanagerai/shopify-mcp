@@ -1,0 +1,19 @@
+{
+  "name": "@shopmanagerai/shopify-theme",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "scripts": { "build": "tsc -b", "test": "vitest run" },
+  "dependencies": {
+    "@shopmanagerai/shared": "workspace:*",
+    "@shopmanagerai/shopify-admin": "workspace:*",
+    "diff": "^7.0.0",
+    "@shopify/theme-check-node": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/diff": "^5.2.3"
+  }
+}

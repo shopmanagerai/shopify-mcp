@@ -1,0 +1,24 @@
+services:
+  shopmanager:
+    build: .
+    # Or pin a published image once one exists:
+    # image: ghcr.io/shopmanagerai/shopify-mcp:0.1.0
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      DATA_DIR: /data
+      # Try it with no Shopify credentials at all:
+      SHOPMANAGER_DEMO: "1"
+      # For a real store, set DEMO to 0 and fill these in. Keep real secrets in
+      # an .env file or your orchestrator's secret store, not in this file.
+      # SHOPMANAGER_MASTER_KEY: ${SHOPMANAGER_MASTER_KEY}
+      # SHOPIFY_CLIENT_ID: ${SHOPIFY_CLIENT_ID}
+      # SHOPIFY_CLIENT_SECRET: ${SHOPIFY_CLIENT_SECRET}
+      # APP_URL: https://your-public-url
+    volumes:
+      - shopmanager-data:/data
+    restart: unless-stopped
+
+volumes:
+  shopmanager-data:

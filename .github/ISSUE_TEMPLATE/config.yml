@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/shopmanagerai/shopify-mcp/security/advisories/new
+    about: Report privately. Please do not open a public issue.
+  - name: Hosted service, billing or account
+    url: https://shopmanagerai.com/contact/
+    about: Questions about the hosted service rather than this repository.
+  - name: Documentation
+    url: https://shopmanagerai.com/docs/
+    about: Guides, tutorials and the prompt library.
