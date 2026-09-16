@@ -121,8 +121,8 @@ importers:
         specifier: ^4.6.14
         version: 4.13.5
       kysely:
-        specifier: ^0.27.5
-        version: 0.27.6
+        specifier: ^0.29.5
+        version: 0.29.5
       zod:
         specifier: ^3.24.1
         version: 3.25.76
@@ -170,8 +170,8 @@ importers:
         specifier: workspace:*
         version: link:../storage
       kysely:
-        specifier: ^0.27.4
-        version: 0.27.6
+        specifier: ^0.29.5
+        version: 0.29.5
 
   packages/mcp-protocol:
     dependencies:
@@ -231,8 +231,8 @@ importers:
         specifier: ^11.8.1
         version: 11.10.0
       kysely:
-        specifier: ^0.27.4
-        version: 0.27.6
+        specifier: ^0.29.5
+        version: 0.29.5
     devDependencies:
       '@types/better-sqlite3':
         specifier: ^7.6.12
@@ -1787,9 +1787,9 @@ packages:
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
-  kysely@0.27.6:
-    resolution: {integrity: sha512-FIyV/64EkKhJmjgC0g2hygpBv5RNWVPyNCqSAD7eTCv6eFWNIi4PN1UvdSJGicN/o35bnevgis4Y0UDC0qi8jQ==}
-    engines: {node: '>=14.0.0'}
+  kysely@0.29.5:
+    resolution: {integrity: sha512-ooa+eSbBNPTo3MycPEuW5jdrxQdQwdtB3LC3h43FiXQbIry5tR0C5lDG7eealK0E4D7XjrnOP5DIUg/LyjRMYQ==}
+    engines: {node: '>=22.0.0'}
 
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
@@ -4016,7 +4016,7 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  kysely@0.27.6: {}
+  kysely@0.29.5: {}
 
   levn@0.4.1:
     dependencies:

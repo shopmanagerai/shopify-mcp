@@ -18,7 +18,7 @@
   "dependencies": {
     "@shopmanagerai/shared": "workspace:*",
     "better-sqlite3": "^11.8.1",
-    "kysely": "^0.27.4"
+    "kysely": "^0.29.5"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.12",
